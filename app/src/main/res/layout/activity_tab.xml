@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabActivity"
+
+    >
+
+
+
+
+
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/tabbed_app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#263238"
+                android:gravity="center"
+                android:elevation="0dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          >
+                          <TextView
+                              android:id="@+id/weather_date"
+                              android:gravity="left"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textStyle="normal"
+                              android:textColor="#fff"
+
+                              android:textSize="20sp"
+                              android:padding="5dp"
+                              android:layout_weight="0.1"
+                              />
+
+                          <Button
+
+
+                              android:id="@+id/settings_button"
+                              android:drawableStart="@drawable/ic_settings_white_24dp"
+                              android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:background="@null"
+
+
+
+                              />
+
+                      </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+
+                        <TextView
+                            android:id="@+id/weather_humidity"
+                            android:gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:textColor="#fff"
+
+                            android:textSize="12sp"
+                            android:padding="5dp"
+                            />
+                        <TextView
+                            android:id="@+id/wind_speed"
+                            android:gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:textColor="#fff"
+                            android:textSize="12sp"
+                            android:padding="5dp"
+                            android:ellipsize="marquee"
+                            android:scrollHorizontally="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            />
+                        <TextView
+                            android:id="@+id/pressure"
+                            android:gravity="bottom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:textColor="#fff"
+
+                            android:textSize="12sp"
+                            android:padding="5dp"
+                            />
+
+
+                    </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:gravity="right"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:visibility="visible"
+
+                                android:id="@+id/weather_picture"
+                                android:layout_gravity="center"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp" />
+
+
+                            <TextView
+                                android:id="@+id/weather_celsius"
+                                android:layout_gravity="top|center"
+                                android:gravity="bottom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="#fff"
+                                android:textSize="20sp"
+                                android:padding="5dp"
+                                />
+
+                            <TextView
+                                android:layout_gravity="top|center"
+                                android:id="@+id/weather_description"
+                                android:gravity="bottom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textStyle="normal"
+                                android:textColor="#fff"
+
+                                android:textSize="12sp"
+                                android:padding="5dp"
+                                />
+
+
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <Spinner
+                        android:id="@+id/spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp" />
+
+
+
+
+
+                </LinearLayout>
+
+
+
+            </android.support.design.widget.AppBarLayout>
+
+            <android.support.design.widget.TabLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                android:id="@+id/tab_layout"
+                app:tabTextColor="@color/colorBack"
+                app:tabIndicatorColor="@color/materialYellow"
+                android:background="#263237"  />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+
+
+            </android.support.v4.view.ViewPager>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+

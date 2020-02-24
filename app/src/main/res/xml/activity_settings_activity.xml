@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <PreferenceCategory
+        android:title="Caching"
+        android:key="cache_category">
+
+        <CheckBoxPreference
+            android:key="cache_option"
+            android:summary="@string/caching_description"
+            android:title="@string/enable_caching"
+            android:defaultValue="false"/>
+
+
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Localization"
+        android:key="localization_category">
+
+        <ListPreference
+
+            android:key="change_language_pref"
+            android:title="@string/language"
+            android:summary="@string/language_description"
+            android:entries="@array/languages"
+            android:entryValues="@array/numbers"
+
+
+
+            />
+
+    </PreferenceCategory>
+
+
+
+
+</PreferenceScreen>

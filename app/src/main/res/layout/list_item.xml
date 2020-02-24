@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100sp"
+    android:background="@drawable/selector">
+
+
+    <ImageView
+        android:id="@+id/foodServiceImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="9dp"
+        android:src="@drawable/ic_icons8_museum" />
+
+    <TextView
+        android:id="@+id/foodServiceHeadLine"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/foodServiceImage"
+        android:maxLines="1"
+        android:text="Headline"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+
+        />
+
+    <TextView
+        android:id="@+id/foodServiceDescription"
+        android:layout_width="match_parent"
+        android:layout_height="19dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/foodServiceImage"
+        android:maxLines="1"
+        android:text="Headline"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/foodServicePrice"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_toRightOf="@id/foodServiceImage"
+        android:maxLines="1"
+        android:text="price"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+
+
+        />
+
+
+</RelativeLayout>

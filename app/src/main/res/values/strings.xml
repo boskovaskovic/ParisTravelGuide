@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Paris Travel Guide</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search_prompt">Search</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="database">database_en</string>
+    <string name="restaurants">Restaurants</string>
+    <string name="hotels">Hotels</string>
+    <string name="fitness">Fitness</string>
+    <string name="cultural_historical_sights">Cultural-Historical sights</string>
+    <string name="news">NEWS</string>
+    <string name="map">MAP</string>
+    <string name="events">EVENTS</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind speed</string>
+    <string name="pressure">Pressure</string>
+    <string name="caching_description">With this option you can read news offline</string>
+    <string name="enable_caching">Enable caching</string>
+    <string name="language">Language</string>
+    <string name="language_description">Choose default language</string>
+
+
+</resources>
